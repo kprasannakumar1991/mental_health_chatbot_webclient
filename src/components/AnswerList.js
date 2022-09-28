@@ -15,7 +15,9 @@ const AnswerList = (props) => {
             return (
                 <div class="ui segments" key={answer._q_no}>
                     <div class="ui segment">
-                        <p style={{color: '#0c6693'}}>Q {answer._q_no}) {answer.question}.   ( {answer.probability} % match)</p>
+                        {/* <p className='applabel'>Q {answer._q_no}) {answer.question}.   ( {answer.probability} % match)</p> */}
+                        <p className='applabel'>{answer.question}.   ( {answer.probability} % match)</p>
+
                     </div>
                     <div class="ui secondary segment">
                         <p>{answer.answer}</p>

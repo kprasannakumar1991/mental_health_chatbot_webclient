@@ -23,7 +23,7 @@ class SearchBar extends React.Component {
                                     type="text" 
                                     value={this.state.term} 
                                     onChange={this.onInputChange} 
-                                    placeholder='Type your question here...'
+                                    placeholder='Type a mental health related question here...'
                             />
                             <button class="ui button">Search</button>
                         </div>

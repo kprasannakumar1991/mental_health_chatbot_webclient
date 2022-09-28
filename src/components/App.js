@@ -4,6 +4,7 @@ import Spinner from './Spinner';
 import AnswerList from './AnswerList';
 import chatbot from '../api/chatbot';
 
+import '../style/App.css'
 
 class App extends React.Component {
 
@@ -45,7 +46,10 @@ class App extends React.Component {
 
             <div className='ui container' style={{marginTop: '20px'}}>
 
-                <div style={{fontSize: '24px', color:'#0c6693'}}>Mental health FAQs <i className='wechat icon'></i></div>
+                {/* <h1 className='applabel'><i className='wechat icon'></i></h1> */}
+                <h2 className='applabel'>Welcome to Mental health chatbot</h2>
+                {/* <p>This app uses a Machine Learning Model trained over a <a href="https://www.kaggle.com/datasets/narendrageek/mental-health-faq-for-chatbot" target="_blank" rel='noreferrer'>dataset</a> to find the best matched answer</p> */}
+                <p style={{color: 'grey'}}>Uses Machine Learning to find the best match</p>
 
                 <SearchBar onSubmit={this.onSearchSubmit}/>
                 
